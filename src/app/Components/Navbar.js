@@ -41,7 +41,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar fixed top-0 left-0 w-full bg-gray-800 opacity-0 transform -translate-y-full z-50 px-2 py-6">
+    <nav className="navbar sticky top-0 left-0 w-full bg-gray-800 opacity-0 transform -translate-y-full z-50 px-2 py-6">
       <ul className="navbar__list flex justify-center items-center ">
         {navLinks.map((el) => (
           <li key={el.id} className="navbar__item list-none mx-2">
