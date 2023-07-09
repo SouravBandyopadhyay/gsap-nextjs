@@ -19,7 +19,7 @@ const AboutSection = () => {
     tl.to(content, { opacity: 1, y: 0, duration: 1 }).to(
       background,
       { yPercent: 0, duration: 1 },
-      "<"
+      '&lsquo'
     );
   }, []);
 
