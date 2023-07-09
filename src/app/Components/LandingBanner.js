@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import Image from "next/image";
 
 const LandingBanner = () => {
   const bannerRef = useRef(null);
@@ -15,7 +14,7 @@ const LandingBanner = () => {
 
   return (
     <figure ref={bannerRef} className="flex flex-col items-center mt-10">
-      <Image
+      <img
         src="https://i.postimg.cc/tRnFtWsY/profile-pic.png"
         alt="Landing Banner"
         className="w-40 h-40 mx-auto rounded-full"
