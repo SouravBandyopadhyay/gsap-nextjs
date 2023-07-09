@@ -21,7 +21,6 @@ const LandingBanner = () => {
       />
       <figcaption className=" text-center text-3xl font-light mt-4">
         <p>Sourav Bandyopadhyay</p>
-        {/* <p className="mx-auto">Detroit Software</p> */}
       </figcaption>
     </figure>
   );
