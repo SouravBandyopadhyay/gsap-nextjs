@@ -33,13 +33,12 @@ const AboutSection = () => {
             rigorous and competitive coding curriculum and learned MERN Stack at
             Masai School. I have done various Collaborative as well as
             Individual projects in my coding journey. Check out some of my work
-            in the Projects section.
+            in the Projects section
           </p>
           <p className="text-lg text-gray-600">
             I am open to job opportunities where I can contribute, learn, and
             grow. If you have a good opportunity that matches my skills and
-            experience, then don't hesitate to <a href="#contact">Contact me</a>
-            .
+            experience, then don't hesitate to Contact me
           </p>
         </div>
       </div>
