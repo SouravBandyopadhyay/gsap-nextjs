@@ -16,11 +16,10 @@ const AboutSection = () => {
 
     const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-    tl.to(content, { opacity: 1, y: 0, duration: 1 }).to(
-      background,
-      { yPercent: 0, duration: 1 },
-      '&lsquo'
-    );
+    tl.to(content, { opacity: 1, y: 0, duration: 1 }).to(background, {
+      yPercent: 0,
+      duration: 1,
+    });
   }, []);
 
   return (
