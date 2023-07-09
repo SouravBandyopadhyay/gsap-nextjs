@@ -20,7 +20,7 @@ export default function Home() {
         <LandingBanner />
         <HomePage />
         <AboutSection />
-        <SkillsSection/>
+        <SkillsSection />
       </main>
       {/* </CustomCursor> */}
     </>
