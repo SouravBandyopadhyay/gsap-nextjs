@@ -9,7 +9,7 @@ import {
   FaHeart,
   FaCheckCircle,
 } from "react-icons/fa";
-import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io";
+import { IoLogoCss3 } from "react-icons/io";
 const SkillsSection = () => {
   const skillsRef = useRef(null);
 
@@ -58,11 +58,10 @@ const SkillsSection = () => {
     };
   }, []);
   const icons = [
-    { icon: <FaReact />, color: "text-blue-500", name: "ReactJS" },
-    { icon: <FaJsSquare />, color: "text-yellow-500", name: "JavaScript" },
-    { icon: <IoLogoCss3 />, color: "text-blue-300", name: "CSS3" },
-    { icon: <FaPython />, color: "text-red-500", name: "Python" },
-    { icon: <FaCheckCircle />, color: "text-green-500", name: "Circle" },
+    { icon: <FaReact />, name: "ReactJS" },
+    { icon: <FaJsSquare />, name: "JavaScript" },
+    { icon: <IoLogoCss3 />, name: "CSS3" },
+    { icon: <FaPython />, name: "Python" },
   ];
   return (
     <section ref={skillsRef} className="py-1 h-screen">
@@ -72,10 +71,10 @@ const SkillsSection = () => {
           {icons.map((el) => (
             <div
               key={el.id}
-              className="skill-item bg-gray-800 rounded-lg p-4 shadow-md text-center"
+              className="skill-item flex flex-row-reverse bg-gray-800 rounded-lg p-4 shadow-md text-center content-center"
             >
-              <div className="text-2xl mb-4">{el.name}</div>
-              <span className={`text-4xl ${el.color}`}>{el.icon}</span>
+              <div className="text-2xl mx-auto">{el.name}</div>
+              <span className="text-6xl mx-auto">{el.icon}</span>
             </div>
           ))}
         </div>
