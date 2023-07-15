@@ -8,7 +8,6 @@ import AboutSection from "./Components/AboutMe";
 import SkillsSection from "./Components/SkillSection";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
- 
   return (
     <>
       {/* Navbar section */}
@@ -17,8 +16,10 @@ export default function Home() {
       </header>
       {/* Content of the page start from here */}
       <main>
-        <LandingBanner />
-        <HomePage />
+        <div className="h-screen">
+          <LandingBanner />
+          <HomePage />
+        </div>
         <AboutSection />
         <SkillsSection />
       </main>

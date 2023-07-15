@@ -26,11 +26,10 @@ const AboutMeSection = () => {
         <div className="text-center">
           <h2 className="title text-4xl font-bold mb-4">About Me</h2>
           <p className="description text-2xl text-gray-600">
-            I am a Web Developer from Gurgaon, Haryana. I have gone through a
-            rigorous and competitive coding curriculum and learned MERN Stack at
-            Masai School. I have done various Collaborative as well as
-            Individual projects in my coding journey. Check out some of my work
-            in the Projects section.
+            I am Sourav Bandyopadhyay, a passionate and experienced Developer
+            based in Gurgaon, Haryana. I have dedicated myself to creating
+            exceptional user experiences that blend functionality and aesthetics
+            seamlessly.
           </p>
         </div>
       </div>
