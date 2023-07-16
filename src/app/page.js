@@ -6,6 +6,7 @@ import LandingBanner from "./Components/LandingBanner";
 import HomePage from "./Components/HomePage";
 import AboutSection from "./Components/AboutMe";
 import SkillSection from "./Components/SkillSection";
+import TestimonialsCarousel from "./Components/Testimonial";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         </div>
         <AboutSection />
         <SkillSection />
+        <TestimonialsCarousel/>
       </main>
       {/* </CustomCursor> */}
     </>
