@@ -42,10 +42,10 @@ const TestimonialsCarousel = () => {
           <div className="p-8">
             <h3 className="text-lg font-bold">Testimonial 1</h3>
             <p className="mt-2">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque in eleifend sapien. Fusce dapibus hendrerit nunc, sit
               amet tempus purus pretium sed. Sed pharetra tellus at fringilla
-              tempus. Quisque ullamcorper est et maximus facilisis."
+              tempus. Quisque ullamcorper est et maximus facilisis.&rdquo;
             </p>
           </div>
         </div>
@@ -53,10 +53,10 @@ const TestimonialsCarousel = () => {
           <div className="p-8">
             <h3 className="text-lg font-bold">Testimonial 2</h3>
             <p className="mt-2">
-              "Suspendisse potenti. Nulla scelerisque efficitur ligula eu
+              &ldquo;Suspendisse potenti. Nulla scelerisque efficitur ligula eu
               dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus
               ultrices. Ut commodo fermentum elementum. Maecenas laoreet
-              venenatis purus vitae scelerisque."
+              venenatis purus vitae scelerisque.&rdquo;
             </p>
           </div>
         </div>
@@ -64,11 +64,11 @@ const TestimonialsCarousel = () => {
           <div className="p-8">
             <h3 className="text-lg font-bold">Testimonial 3</h3>
             <p className="mt-2">
-              "Duis faucibus volutpat mauris at semper. Nullam sed metus
+              &ldquo;Duis faucibus volutpat mauris at semper. Nullam sed metus
               condimentum, convallis lacus ac, aliquam libero. Vestibulum ante
               ipsum primis in faucibus orci luctus et ultrices posuere cubilia
               curae; Mauris facilisis, purus ut ultrices dignissim, tellus enim
-              lacinia neque, ut convallis mi dolor eu libero."
+              lacinia neque, ut convallis mi dolor eu libero.&rdquo;
             </p>
           </div>
         </div>
