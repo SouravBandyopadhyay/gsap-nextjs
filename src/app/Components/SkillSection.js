@@ -32,7 +32,7 @@ const SkillsSection = () => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: skillsSection,
-          start: "top 80%",
+          start: "top 70%",
           scroller: "body",
           markers: true,
           end: "top 20%",

@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar";
 import LandingBanner from "./Components/LandingBanner";
 import HomePage from "./Components/HomePage";
 import AboutSection from "./Components/AboutMe";
-import SkillsSection from "./Components/SkillSection";
+import SkillSection from "./Components/SkillSection";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
           <HomePage />
         </div>
         <AboutSection />
-        <SkillsSection />
+        <SkillSection />
       </main>
       {/* </CustomCursor> */}
     </>
