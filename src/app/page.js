@@ -7,6 +7,9 @@ import HomePage from "./Components/HomePage";
 import AboutSection from "./Components/AboutMe";
 import SkillSection from "./Components/SkillSection";
 import TestimonialsCarousel from "./Components/Testimonial";
+import TestimonialsCarousel2 from "./Components/Testimonials2";
+import ProjectsSection from "./Components/ProjexctSection";
+import MessageIcon from "./Components/RandomMotion";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
   return (
@@ -23,7 +26,9 @@ export default function Home() {
         </div>
         <AboutSection />
         <SkillSection />
-        <TestimonialsCarousel/>
+        <TestimonialsCarousel />
+        <ProjectsSection />
+        <MessageIcon/>
       </main>
       {/* </CustomCursor> */}
     </>
