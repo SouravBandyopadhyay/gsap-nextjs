@@ -10,6 +10,9 @@ import TestimonialsCarousel from "./Components/Testimonial";
 import TestimonialsCarousel2 from "./Components/Testimonials2";
 import ProjectsSection from "./Components/ProjexctSection";
 import MessageIcon from "./Components/RandomMotion";
+import OpenSourceContributions from "./Components/OpenSourceContribution";
+import Footer from "./Components/Footer";
+import DropText from "./Components/DropEffect";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
   return (
@@ -28,9 +31,10 @@ export default function Home() {
         <SkillSection />
         <TestimonialsCarousel />
         <ProjectsSection />
-        <MessageIcon/>
+        <OpenSourceContributions />
+        {/* <MessageIcon/> */}
       </main>
-      {/* </CustomCursor> */}
+      <Footer />
     </>
   );
 }
