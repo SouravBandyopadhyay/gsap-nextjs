@@ -1,5 +1,8 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import the ScrollTrigger plugin
 import React, { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger with GSAP
 
 const contributions = [
   {
@@ -23,22 +26,39 @@ const contributions = [
     link: "https://github.com/example/community-tools",
   },
 ];
-
 const OpenSourceContributions = () => {
   const containerRef = useRef(null);
+  const cardRefs = useRef([]);
 
   useEffect(() => {
     const container = containerRef.current;
-    gsap.from(container, { opacity: 0, y: 50, duration: 1 });
+
+    // Use ScrollTrigger to create the slide-in animation for contribution cards
+    cardRefs.current.forEach((cardRef) => {
+      gsap.from(cardRef, {
+        x: "-100%",
+        opacity: 0,
+        duration: 0.8,
+        scrollTrigger: {
+          trigger: cardRef,
+          start: "top 80%", // Adjust the start position as needed
+          end: "bottom 50%", // Adjust the end position as needed
+          toggleActions: "play none none reverse",
+          // Add the markers option to visualize ScrollTrigger's trigger and end positions (optional)
+          // markers: true,
+        },
+      });
+    });
   }, []);
 
   return (
     <div ref={containerRef} className="py-8 text-center">
       <h1 className="text-4xl font-bold mb-4">My Open Source Contributions</h1>
       <div className="grid gap-4 md:grid-cols-3">
-        {contributions.map((contribution) => (
+        {contributions.map((contribution, index) => (
           <div
             key={contribution.id}
+            ref={(el) => (cardRefs.current[index] = el)}
             className="bg-white p-6 shadow-md rounded-lg hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1"
           >
             <h2 className="text-xl font-semibold mb-4">{contribution.title}</h2>
