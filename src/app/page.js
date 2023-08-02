@@ -13,15 +13,14 @@ import MessageIcon from "./Components/RandomMotion";
 import OpenSourceContributions from "./Components/OpenSourceContribution";
 import Footer from "./Components/Footer";
 import DataProgress from "./Components/DataProgess";
+import { TransitionProvider } from "./Context/TransitionContext";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
   return (
-    <>
-      {/* Navbar section */}
+    <TransitionProvider>
       <header>
         <Navbar />
       </header>
-      {/* Content of the page start from here */}
       <main className="relative">
         <div className="h-screen">
           <LandingBanner />
@@ -34,6 +33,6 @@ export default function Home() {
         <OpenSourceContributions />
       </main>
       <Footer />
-    </>
+    </TransitionProvider>
   );
 }
