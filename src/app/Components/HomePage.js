@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 const HomePage = () => {
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const t1 = gsap.timeline();
     t1.from(".line", {
       y: 100,
@@ -16,7 +17,7 @@ const HomePage = () => {
     return () => {};
   });
   return (
-    //SECTION  APP Container
+    //SECTION APP Container
     <div className="w-full h-20 mx-auto mt-8 flex items-center content-center text-center overflow-hidden">
       {/* Wrapper */}
       <div className="wrapper w-full flex flex-col content-center items-center ">

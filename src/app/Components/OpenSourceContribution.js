@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; // Import the ScrollTrigger plugin
 import React, { useEffect, useRef } from "react";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger with GSAP
 
@@ -30,7 +31,7 @@ const OpenSourceContributions = () => {
   const containerRef = useRef(null);
   const cardRefs = useRef([]);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const container = containerRef.current;
 
     // Use ScrollTrigger to create the slide-in animation for contribution cards

@@ -1,11 +1,12 @@
 // components/DataProgress.js
 import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
+import useIsomorphicLayoutEffect from '../useIsomorphicLayoutEffect';
 
 const DataProgress = ({ dataPercentage }) => {
   const [isAnimated, setIsAnimated] = useState(false);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (!isAnimated) {
       gsap.to('.progress-bar', {
         width: `${dataPercentage}%`,

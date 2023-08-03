@@ -10,11 +10,12 @@ import {
   FaReact,
 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const SkillsSection = () => {
   const skillsRef = useRef(null);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const skillsSection = skillsRef.current;
     const skillsItems = skillsSection.querySelectorAll(".skill-item");
 
@@ -34,7 +35,7 @@ const SkillsSection = () => {
           trigger: skillsSection,
           start: "top 70%",
           scroller: "body",
-          markers: true,
+          // markers: true,
           end: "top 20%",
           scrub: 5,
         },
@@ -58,7 +59,8 @@ const SkillsSection = () => {
   return (
     <section
       ref={skillsRef}
-      className="py-1 h-screen border-2 border-red-600 border-solid"
+      // border-2 border-red-600 border-solid
+      className="py-1 h-screen "
     >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-8 text-center">Skills</h2>

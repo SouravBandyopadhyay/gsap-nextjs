@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const AboutMeSection = () => {
   const sectionRef = useRef(null);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({ defaults: { opacity: 0, y: 50 } });
@@ -22,7 +23,7 @@ const AboutMeSection = () => {
       start: "top 70%",
       end: "top 20%",
       animation: tl,
-      markers: true,
+      // markers: true,
       scrub: true,
       toggleActions: "play none none reverse",
     });
@@ -35,7 +36,8 @@ const AboutMeSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="border-2 border-red-500 border-solid py-8"
+      // border-2 border-red-500 border-solid
+      className=" py-8"
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4">About Me</h2>

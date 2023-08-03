@@ -1,11 +1,12 @@
 // components/Footer.js
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const Footer = () => {
   const nameRef = useRef(null);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const nameElement = nameRef.current;
     gsap.from(nameElement, {
       duration: 1.5,

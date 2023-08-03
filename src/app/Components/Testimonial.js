@@ -1,11 +1,12 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const TestimonialsCarousel = () => {
   const carouselRef = useRef(null);
   const slideRef = useRef(null);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const carousel = carouselRef.current;
     const slides = slideRef.current.children;
     const totalSlides = slides.length;

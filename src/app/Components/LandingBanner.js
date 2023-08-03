@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const LandingBanner = () => {
   const bannerRef = useRef(null);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     gsap.from(bannerRef.current, {
       duration: 3,
       opacity: 0,

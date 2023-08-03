@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const Navbar = () => {
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const tl = gsap.timeline();
 
     tl.to(".navbar", {

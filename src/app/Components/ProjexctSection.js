@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
@@ -40,7 +41,7 @@ const projects = [
 const ProjectsSection = () => {
   const projectsRef = useRef(null);
 
-  useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     const projectsContainer = projectsRef.current;
     const projectsCards = projectsContainer.querySelectorAll(".project-card");
 
