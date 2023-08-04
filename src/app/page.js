@@ -10,9 +10,8 @@ import TestimonialsCarousel from "./Components/Testimonial";
 import ProjectsSection from "./Components/ProjexctSection";
 import OpenSourceContributions from "./Components/OpenSourceContribution";
 import Footer from "./Components/Footer";
-import {
-  TransitionProvider,
-} from "./Context/TransitionContext";
+import { TransitionProvider } from "./Context/TransitionContext";
+import GithubCalender from "./Components/GithubCalender";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
   return (
@@ -30,6 +29,7 @@ export default function Home() {
         <TestimonialsCarousel />
         <ProjectsSection />
         <OpenSourceContributions />
+        <GithubCalender />
       </main>
       <Footer />
     </TransitionProvider>

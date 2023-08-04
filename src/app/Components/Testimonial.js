@@ -34,10 +34,7 @@ const TestimonialsCarousel = () => {
   }, []);
 
   return (
-    <div
-      ref={carouselRef}
-      className="relative overflow-hidden border-2 border-red-500 border-solid"
-    >
+    <div ref={carouselRef} className="relative overflow-hidden">
       <div ref={slideRef} className="flex">
         <div className="w-full">
           <div className="p-8">
