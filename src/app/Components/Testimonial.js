@@ -5,15 +5,15 @@ import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 const testimonialArr = [
   {
     id: 1,
-    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in eleifend sapien. Fusce dapibus hendrerit nunc, sit amet tempus purus pretium sed. Sed pharetra tellus at fringilla tempus. Quisque ullamcorper est et maximus facilisis.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in eleifend sapien. Fusce dapibus hendrerit nunc, sit amet tempus purus pretium sed. Sed pharetra tellus at fringilla tempus. Quisque ullamcorper est et maximus facilisis.",
   },
   {
     id: 2,
-    name: "Suspendisse potenti. Nulla scelerisque efficitur ligula eu    dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus ultrices. Ut commodo fermentum elementum. Maecenas laoreet venenatis purus vitae scelerisque.",
+    desc: "Suspendisse potenti. Nulla scelerisque efficitur ligula eu    dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus ultrices. Ut commodo fermentum elementum. Maecenas laoreet venenatis purus vitae scelerisque.",
   },
   {
     id: 3,
-    name: "Suspendisse potenti. Nulla scelerisque efficitur ligula eu    dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus ultrices. Ut commodo fermentum elementum. Maecenas laoreet venenatis purus vitae scelerisque.",
+    desc: "Suspendisse potenti. Nulla scelerisque efficitur ligula eu    dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus ultrices. Ut commodo fermentum elementum. Maecenas laoreet venenatis purus vitae scelerisque.",
   },
 ];
 
@@ -55,9 +55,9 @@ const TestimonialsCarousel = () => {
       </h2>
       <div ref={slideRef} className="flex p-5">
         {testimonialArr.map((el) => (
-          <section className="p-8 bg-zinc-900 rounded-md">
+          <section className="p-8 bg-zinc-900 rounded-md" key={el.id}>
             <h3 className="text-lg font-bold">Testimonial 3</h3>
-            <p className="mt-2 text-md">{el.name}</p>
+            <p className="mt-2 text-md">{el.desc}</p>
           </section>
         ))}
       </div>
