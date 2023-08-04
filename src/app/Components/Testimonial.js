@@ -2,6 +2,21 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
+const testimonialArr = [
+  {
+    id: 1,
+    name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in eleifend sapien. Fusce dapibus hendrerit nunc, sit amet tempus purus pretium sed. Sed pharetra tellus at fringilla tempus. Quisque ullamcorper est et maximus facilisis.",
+  },
+  {
+    id: 2,
+    name: "Suspendisse potenti. Nulla scelerisque efficitur ligula eu    dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus ultrices. Ut commodo fermentum elementum. Maecenas laoreet venenatis purus vitae scelerisque.",
+  },
+  {
+    id: 3,
+    name: "Suspendisse potenti. Nulla scelerisque efficitur ligula eu    dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus ultrices. Ut commodo fermentum elementum. Maecenas laoreet venenatis purus vitae scelerisque.",
+  },
+];
+
 const TestimonialsCarousel = () => {
   const carouselRef = useRef(null);
   const slideRef = useRef(null);
@@ -35,41 +50,16 @@ const TestimonialsCarousel = () => {
 
   return (
     <div ref={carouselRef} className="relative overflow-hidden">
-      <div ref={slideRef} className="flex">
-        <div className="w-full">
-          <div className="p-8">
-            <h3 className="text-lg font-bold">Testimonial 1</h3>
-            <p className="mt-2">
-              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque in eleifend sapien. Fusce dapibus hendrerit nunc, sit
-              amet tempus purus pretium sed. Sed pharetra tellus at fringilla
-              tempus. Quisque ullamcorper est et maximus facilisis.&rdquo;
-            </p>
-          </div>
-        </div>
-        <div className="w-full">
-          <div className="p-8">
-            <h3 className="text-lg font-bold">Testimonial 2</h3>
-            <p className="mt-2">
-              &ldquo;Suspendisse potenti. Nulla scelerisque efficitur ligula eu
-              dapibus. Mauris ac iaculis ante. Nullam lacinia lacus ac rhoncus
-              ultrices. Ut commodo fermentum elementum. Maecenas laoreet
-              venenatis purus vitae scelerisque.&rdquo;
-            </p>
-          </div>
-        </div>
-        <div className="w-full">
-          <div className="p-8">
+      <h2 className=" mx-auto my-auto text-center text-4xl font-bold mb-4">
+        Testimonial
+      </h2>
+      <div ref={slideRef} className="flex p-5">
+        {testimonialArr.map((el) => (
+          <section className="p-8 bg-zinc-900 rounded-md">
             <h3 className="text-lg font-bold">Testimonial 3</h3>
-            <p className="mt-2">
-              &ldquo;Duis faucibus volutpat mauris at semper. Nullam sed metus
-              condimentum, convallis lacus ac, aliquam libero. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-              curae; Mauris facilisis, purus ut ultrices dignissim, tellus enim
-              lacinia neque, ut convallis mi dolor eu libero.&rdquo;
-            </p>
-          </div>
-        </div>
+            <p className="mt-2 text-md">{el.name}</p>
+          </section>
+        ))}
       </div>
     </div>
   );
