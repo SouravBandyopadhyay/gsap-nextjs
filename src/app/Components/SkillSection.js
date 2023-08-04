@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -8,6 +8,7 @@ import {
   FaJsSquare,
   FaPython,
   FaReact,
+  FaTrafficLight,
 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
@@ -51,9 +52,9 @@ const SkillsSection = () => {
     { icon: <FaGithub />, name: "Github" },
     { icon: <FaDocker />, name: "Docker" },
     { icon: <FaPython />, name: "Python" },
-    { icon: <FaPython />, name: "Python" },
-    { icon: <FaPython />, name: "Python" },
-    { icon: <FaPython />, name: "Python" },
+    { icon: <FaPython />, name: "Django" },
+    { icon: <FaPython />, name: "TypeScript" },
+    { icon: <FaTrafficLight />, name: "Chakra UI" },
   ];
 
   return (
