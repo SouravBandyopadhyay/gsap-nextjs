@@ -20,8 +20,8 @@ export default function DraggableSVG() {
   }, []);
 
   return (
-    <div ref={app} className="draggablesvg w-full p-4">
-      <div className="box">
+    <div ref={app} className="draggablesvg">
+      <div className="box w-20">
         <svg
           width="100"
           height="100"
