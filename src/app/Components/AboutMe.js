@@ -8,7 +8,6 @@ const AboutMeSection = () => {
 
   useIsomorphicLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
     const tl = gsap.timeline({ defaults: { opacity: 0, y: 50 } });
 
     tl.from(sectionRef.current.children, {

@@ -13,6 +13,7 @@ import Footer from "./Components/Footer";
 import { TransitionProvider } from "./Context/TransitionContext";
 import GithubCalender from "./Components/GithubCalender";
 import MotionPathAnimation from "./Components/MotionPathAnimation";
+import DraggableSVG from "./Components/DraggableSVG";
 gsap.registerPlugin(CSSPlugin);
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
         <div className="h-screen">
           <LandingBanner />
           <HomePage />
-          <MotionPathAnimation/>
+          {/* <MotionPathAnimation/> */}
+          <DraggableSVG />
         </div>
         <AboutSection />
         <SkillSection />
