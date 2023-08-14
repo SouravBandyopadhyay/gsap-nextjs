@@ -11,6 +11,7 @@ import {
   FaTrafficLight,
 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
+import {SiTypescript,SiChakraui} from "react-icons/si"
 import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const SkillsSection = () => {
@@ -45,16 +46,15 @@ const SkillsSection = () => {
   }, []);
 
   const icons = [
-    { icon: <FaReact />, name: "ReactJS" },
+    { icon: <FaReact/>, name: "ReactJS" },
     { icon: <FaJsSquare />, name: "JavaScript" },
     { icon: <IoLogoCss3 />, name: "CSS3" },
     { icon: <FaAws />, name: "AWS" },
     { icon: <FaGithub />, name: "Github" },
     { icon: <FaDocker />, name: "Docker" },
     { icon: <FaPython />, name: "Python" },
-    { icon: <FaPython />, name: "Django" },
-    { icon: <FaPython />, name: "TypeScript" },
-    { icon: <FaTrafficLight />, name: "Chakra UI" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <SiChakraui />, name: "Chakra UI" },
   ];
 
   return (
@@ -71,8 +71,8 @@ const SkillsSection = () => {
               key={el.name}
               className="skill-item flex flex-row-reverse bg-gray-800 rounded-lg p-4 shadow-md text-center content-center"
             >
-              <div className="text-2xl mx-auto">{el.name}</div>
-              <span className="text-6xl mx-auto">{el.icon}</span>
+              <div className="text-2xl mx-auto my-auto">{el.name}</div>
+              <span className="text-6xl mx-auto my-auto ">{el.icon}</span>
             </div>
           ))}
         </div>

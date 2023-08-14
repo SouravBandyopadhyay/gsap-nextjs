@@ -22,11 +22,11 @@ export default function Home() {
         <Navbar />
       </header>
       <main className="relative">
-        <div className="h-screen">
+        <div className="h-1/2">
           <LandingBanner />
           <HomePage />
           {/* <MotionPathAnimation/> */}
-          <DraggableSVG />
+          {/* <DraggableSVG /> */}
         </div>
         <AboutSection />
         <SkillSection />

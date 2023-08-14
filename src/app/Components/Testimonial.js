@@ -56,7 +56,7 @@ const TestimonialsCarousel = () => {
       <div ref={slideRef} className="flex p-5">
         {testimonialArr.map((el) => (
           <section className="p-8 bg-zinc-900 rounded-md" key={el.id}>
-            <h3 className="text-lg font-bold">Testimonial 3</h3>
+            <h3 className="text-lg font-bold">Testimonial {el.id}</h3>
             <p className="mt-2 text-md">{el.desc}</p>
           </section>
         ))}
