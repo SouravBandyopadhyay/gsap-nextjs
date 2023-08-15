@@ -25,8 +25,6 @@ export default function Home() {
         <div className="h-1/2">
           <LandingBanner />
           <HomePage />
-          {/* <MotionPathAnimation/> */}
-          {/* <DraggableSVG /> */}
         </div>
         <AboutSection />
         <SkillSection />
