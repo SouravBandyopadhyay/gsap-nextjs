@@ -11,7 +11,7 @@ import {
   FaTrafficLight,
 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
-import {SiTypescript,SiChakraui} from "react-icons/si"
+import { SiTypescript, SiChakraui } from "react-icons/si"
 import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const SkillsSection = () => {
@@ -46,7 +46,7 @@ const SkillsSection = () => {
   }, []);
 
   const icons = [
-    { icon: <FaReact/>, name: "ReactJS" },
+    { icon: <FaReact />, name: "ReactJS" },
     { icon: <FaJsSquare />, name: "JavaScript" },
     { icon: <IoLogoCss3 />, name: "CSS3" },
     { icon: <FaAws />, name: "AWS" },

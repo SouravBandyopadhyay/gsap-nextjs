@@ -1,26 +1,13 @@
 // components/Footer.js
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import useIsomorphicLayoutEffect from "../useIsomorphicLayoutEffect";
 
 const Footer = () => {
-  const nameRef = useRef(null);
-
-  useIsomorphicLayoutEffect(() => {
-    const nameElement = nameRef.current;
-    gsap.from(nameElement, {
-      duration: 1.5,
-      opacity: 0,
-      y: 20,
-      ease: "power3.out",
-      delay: 0.5,
-    });
-  }, []);
-
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto text-center">
-        <h2 ref={nameRef} className="text-3xl font-semibold mb-4">
+        <h2 className="text-3xl font-semibold mb-4">
           SOURAV BANDYOPADHYAY
         </h2>
         <div className="flex justify-center space-x-6 mb-4">
@@ -53,7 +40,7 @@ const Footer = () => {
           &copy; 2023 Your Portfolio. All rights reserved.
         </p>
       </div>
-      
+
     </footer>
   );
 };
